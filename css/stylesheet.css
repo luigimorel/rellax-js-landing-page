@@ -92,7 +92,7 @@ section {
   position: absolute;
   width: 50%;
   top: 130px;
-  left: 70px;
+  right: 70px;
 }
 .section-stream .content > div,
 .section-grid > div {
@@ -127,4 +127,39 @@ section {
   align-items: center;
   justify-content: space-around;
   text-align: center;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 700px) {
+  .section-top .content,
+  .section-stream .play,
+  .section-grid .content {
+    position: static;
+    width: 100%;
+  }
+  .section-top {
+    min-height: 200px;
+    padding-top: 20px;
+  }
+  .section-top .content {
+    text-align: center;
+  }
+  .section-top .content h1 {
+    font-size: 45px;
+  }
+  .section-stream {
+    min-height: 400px;
+  }
+  .section-stream .play {
+    width: 50%;
+    display: block;
+    margin: 30px auto;
+  }
+  .section-grid {
+    display: block;
+    margin-top: 0;
+  }
+  .footer ul {
+    display: block;
+  }
 }
